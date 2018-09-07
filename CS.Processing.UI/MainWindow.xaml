@@ -1,0 +1,24 @@
+﻿<Window x:Class="CS.Processing.UI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CS.Processing.UI"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <StackPanel>
+        <ListView x:Name="DataView">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Date" DisplayMemberBinding="{Binding Date}"/>
+                    <GridViewColumn Header="Open" DisplayMemberBinding="{Binding Open}"/>
+                    <GridViewColumn Header="High" DisplayMemberBinding="{Binding High}"/>
+                    <GridViewColumn Header="Low" DisplayMemberBinding="{Binding Low}"/>
+                    <GridViewColumn Header="Close" DisplayMemberBinding="{Binding Close}"/>
+                    <GridViewColumn Header="Volume" DisplayMemberBinding="{Binding Volume}"/>
+
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </StackPanel>
+</Window>
